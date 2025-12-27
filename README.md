@@ -2,7 +2,33 @@
 
 A Candy Crush-style match-3 puzzle game where you help a trapped person escape by clearing a path to the top!
 
-## 🎮 How to Play
+## � Play Now
+
+**[Play Free The Man](https://keep-code-simple.github.io/free-the-man/)** - No download required!
+
+## �🎮 Controls
+
+### 📱 iPhone / iPad (Touch)
+| Action | How To |
+|--------|--------|
+| Select tile | Tap on any colored tile |
+| Swap tiles | Tap first tile, then tap adjacent tile |
+| Cancel selection | Tap anywhere else or tap the same tile again |
+| Restart level | Tap the **↺ Restart** button |
+| Get hint | Tap the **💡 Hint** button |
+
+### 🖥️ Desktop Browser (Mouse)
+| Action | How To |
+|--------|--------|
+| Select tile | Click on any colored tile |
+| Swap tiles | Click first tile, then click adjacent tile |
+| Cancel selection | Click anywhere else or click the same tile again |
+| Restart level | Click the **↺ Restart** button |
+| Get hint | Click the **💡 Hint** button |
+
+> **Note**: Both touch and mouse inputs work the same way - tap/click to select, then tap/click an adjacent tile to swap!
+
+## 🎯 How to Play
 
 1. **Match Tiles**: Swap adjacent tiles to match 3 or more of the same color
 2. **Clear a Path**: Matched tiles disappear, creating space for the character to move up
