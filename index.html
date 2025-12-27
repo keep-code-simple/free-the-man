@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free The Man - A match-3 puzzle escape game">
+    <title>Free The Man - Puzzle Escape Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <div class="level-info">
+                <span class="level-label">Level</span>
+                <span class="level-number" id="levelNumber">1</span>
+            </div>
+            <h1 class="game-title">Free The Man</h1>
+            <div class="moves-info">
+                <span class="moves-label">Moves</span>
+                <span class="moves-count" id="movesCount">20</span>
+            </div>
+        </header>
+
+        <!-- Game Board -->
+        <main class="game-board-container">
+            <div class="exit-indicator" id="exitIndicator">
+                <span class="exit-text">EXIT</span>
+                <div class="exit-glow"></div>
+            </div>
+            <div class="game-board" id="gameBoard">
+                <!-- Tiles will be rendered here -->
+            </div>
+        </main>
+
+        <!-- Controls -->
+        <footer class="game-controls">
+            <button class="btn btn-restart" id="restartBtn">
+                <span class="btn-icon">↺</span>
+                Restart
+            </button>
+            <button class="btn btn-hint" id="hintBtn">
+                <span class="btn-icon">💡</span>
+                Hint
+            </button>
+        </footer>
+
+        <!-- Win Modal -->
+        <div class="modal" id="winModal">
+            <div class="modal-content modal-win">
+                <div class="modal-icon">🎉</div>
+                <h2 class="modal-title">Escaped!</h2>
+                <p class="modal-message">You freed the trapped person!</p>
+                <div class="modal-stats">
+                    <div class="stat">
+                        <span class="stat-label">Moves Used</span>
+                        <span class="stat-value" id="winMoves">15</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="nextLevelBtn">Next Level</button>
+            </div>
+        </div>
+
+        <!-- Lose Modal -->
+        <div class="modal" id="loseModal">
+            <div class="modal-content modal-lose">
+                <div class="modal-icon">😢</div>
+                <h2 class="modal-title">Out of Moves!</h2>
+                <p class="modal-message">The person is still trapped...</p>
+                <button class="btn btn-primary" id="retryBtn">Try Again</button>
+            </div>
+        </div>
+
+        <!-- Start Modal -->
+        <div class="modal active" id="startModal">
+            <div class="modal-content modal-start">
+                <div class="modal-icon">🧩</div>
+                <h2 class="modal-title">Free The Man</h2>
+                <p class="modal-message">Match 3+ tiles to clear a path and help the trapped person escape to the top!</p>
+                <div class="instructions">
+                    <div class="instruction">
+                        <span class="instruction-icon">👆</span>
+                        <span>Swap adjacent tiles</span>
+                    </div>
+                    <div class="instruction">
+                        <span class="instruction-icon">🎯</span>
+                        <span>Match 3+ same colors</span>
+                    </div>
+                    <div class="instruction">
+                        <span class="instruction-icon">⬆️</span>
+                        <span>Guide character up</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-start" id="startBtn">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/entities/Tile.js"></script>
+    <script src="js/entities/Character.js"></script>
+    <script src="js/managers/GridManager.js"></script>
+    <script src="js/managers/MatchResolver.js"></script>
+    <script src="js/managers/GravitySystem.js"></script>
+    <script src="js/managers/CharacterController.js"></script>
+    <script src="js/managers/LevelManager.js"></script>
+    <script src="js/utils/AnimationManager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "First Steps",
+      "description": "Learn the basics - match tiles to clear a path!",
+      "gridWidth": 7,
+      "gridHeight": 8,
+      "maxMoves": 25,
+      "characterStart": { "x": 3, "y": 7 },
+      "exitPosition": { "x": 3, "y": 0 },
+      "blockers": [],
+      "tileTypes": ["red", "blue", "green", "yellow"]
+    },
+    {
+      "id": 2,
+      "name": "Stone Cold",
+      "description": "Stone blocks can't be moved or matched!",
+      "gridWidth": 7,
+      "gridHeight": 9,
+      "maxMoves": 22,
+      "characterStart": { "x": 3, "y": 8 },
+      "exitPosition": { "x": 3, "y": 0 },
+      "blockers": [
+        { "type": "stone", "x": 2, "y": 4 },
+        { "type": "stone", "x": 4, "y": 4 },
+        { "type": "stone", "x": 1, "y": 6 },
+        { "type": "stone", "x": 5, "y": 6 }
+      ],
+      "tileTypes": ["red", "blue", "green", "yellow"]
+    },
+    {
+      "id": 3,
+      "name": "Ice Breaker",
+      "description": "Ice tiles need multiple matches to break!",
+      "gridWidth": 8,
+      "gridHeight": 10,
+      "maxMoves": 25,
+      "characterStart": { "x": 4, "y": 9 },
+      "exitPosition": { "x": 4, "y": 0 },
+      "blockers": [
+        { "type": "stone", "x": 2, "y": 3 },
+        { "type": "stone", "x": 5, "y": 3 },
+        { "type": "stone", "x": 3, "y": 5 },
+        { "type": "stone", "x": 4, "y": 5 }
+      ],
+      "tileTypes": ["red", "blue", "green", "yellow", "purple"]
+    },
+    {
+      "id": 4,
+      "name": "Narrow Escape",
+      "description": "Navigate through the narrow passage!",
+      "gridWidth": 8,
+      "gridHeight": 10,
+      "maxMoves": 22,
+      "characterStart": { "x": 4, "y": 9 },
+      "exitPosition": { "x": 4, "y": 0 },
+      "blockers": [
+        { "type": "stone", "x": 1, "y": 2 },
+        { "type": "stone", "x": 1, "y": 3 },
+        { "type": "stone", "x": 1, "y": 4 },
+        { "type": "stone", "x": 2, "y": 4 },
+        { "type": "stone", "x": 2, "y": 5 },
+        { "type": "stone", "x": 2, "y": 6 },
+        { "type": "stone", "x": 6, "y": 2 },
+        { "type": "stone", "x": 6, "y": 3 },
+        { "type": "stone", "x": 6, "y": 4 },
+        { "type": "stone", "x": 5, "y": 4 },
+        { "type": "stone", "x": 5, "y": 5 },
+        { "type": "stone", "x": 5, "y": 6 }
+      ],
+      "tileTypes": ["red", "blue", "green", "yellow", "purple"]
+    },
+    {
+      "id": 5,
+      "name": "The Gauntlet",
+      "description": "The ultimate challenge awaits!",
+      "gridWidth": 9,
+      "gridHeight": 12,
+      "maxMoves": 30,
+      "characterStart": { "x": 4, "y": 11 },
+      "exitPosition": { "x": 4, "y": 0 },
+      "blockers": [
+        { "type": "stone", "x": 2, "y": 10 },
+        { "type": "stone", "x": 6, "y": 10 },
+        { "type": "stone", "x": 1, "y": 7 },
+        { "type": "stone", "x": 2, "y": 7 },
+        { "type": "stone", "x": 3, "y": 7 },
+        { "type": "stone", "x": 5, "y": 7 },
+        { "type": "stone", "x": 6, "y": 7 },
+        { "type": "stone", "x": 7, "y": 7 },
+        { "type": "stone", "x": 1, "y": 4 },
+        { "type": "stone", "x": 2, "y": 4 },
+        { "type": "stone", "x": 6, "y": 4 },
+        { "type": "stone", "x": 7, "y": 4 },
+        { "type": "stone", "x": 3, "y": 2 },
+        { "type": "stone", "x": 5, "y": 2 }
+      ],
+      "tileTypes": ["red", "blue", "green", "yellow", "purple"]
+    }
+  ]
+}
